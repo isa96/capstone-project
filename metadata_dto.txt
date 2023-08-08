@@ -1,0 +1,69 @@
+Metadata Info:
+
+scanPeduliLindungi
+-> Data scan peduli lingdung
+
+sid = auto generated id
+userId = auto generated kode user
+user_status = status keterjangkitan covid (positif/negatif)
+checkInTime = waktu cekin di suatu tempat
+checkOutTime = waktu cekout di suatu tempat
+place_name = nama tempat yang dikunjungi
+place_categoryName = kategori tempat yang dikunjungi
+locationAddress = alamat tempat yang dikunjungi
+location_latitude = titik latitude tempat yang dikunjungi
+location_longitude = titik longitude tempat yang dikunjungi
+crowd = banyaknya kerumunan saat cekin di suatu tempat
+status = status data (1=valid, 0=tidak valid)
+userStatus = status warna seseorang saat mengunjungi suatu tempat (hijau/merah/hitam/kuning)
+	- hijau: sudah vaksin 2x
+	- merah: belum vaksin
+	- hitam: positif 
+	- kuning: baru vaksin 1x
+updatedAt = waktu update data
+createdAt = waktu pembuatan data
+
+
+DataMicrosite
+-> Data verifikasi keberangkatan seseorang via perjalanan udara
+
+sid = auto generated id
+userId = auto generated kode user
+place = kode tempat
+swabDate = waktu pelaksanaan tes swab
+swabResult = hasil tes swab
+swabHospital = tempat pelaksanaan tes swab
+swabValid = status tes swab (false/true)
+atigenDate = waktu pelaksanaan tes antigen
+atigenResult = hasil tes antigen
+antigenHospital = tempat pelaksanaan tes antigen
+atigenValid = status tes antigen (false/true)
+flightStatus = status diperbolehkannya perjalanan seseorang berdasarkan hasil tes swab/antigen (false/true)
+createdAt = waktu pembuatan data 
+updatedAt = waktu update data
+
+
+DataEHac
+-> Data pengisian form eHac seseorang yang akan melakukan perjalanan
+
+sid= auto generated id
+createdBy_userId = auto generated kode user
+createdAt = waktu pembuatan data 
+createdBy_status = status keterjangkitan covid (positif/negatif)
+healthDeclaration_hospitalName = Nama tempat yang merilis hasil tes
+healthDeclaration_visitedCountry = Lokasi (negara) yang merilis hasil tes
+healthDeclaration_symptoms = hasil diagnosa detail dari hasil test
+personalDetail_travelPurpose = tujuan perjalanan dari seseorang
+personalDetail_passportCountry = paspor negara seseorag
+personalDetail_citizen	= kewarganegaraan seseorang
+personalDetail_gender	= jenis kelamin
+personalDetail_bornDate = tanggal lahir
+scan_latitude	= titik latitude tempat yang dikunjung
+scan_longitude	= titik longitude tempat yang dikunjung
+travelDetail_transportation_vehicleType = jenis kendaraan yang digunakan untuk perjalanan	
+travelDetail_destination_cityName = nama kota tujuan perjalanan
+travelDetail_destination_provinceName = nama provinsi tujuan perjalanan
+travelDetail_origin_cityName = nama kota asal perjalanan
+travelDetail_origin_provinceName = nama provinsi asal perjalanan	
+typeEhac	
+updatedAt = waktu update data
